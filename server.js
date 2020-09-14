@@ -67,6 +67,10 @@ app.get('/hospitals/colleges',function(request,response)
         response.render("colleges",{medCollegeArr:medCollegeArr})
     })
 });
+ app.get('/graph',function(request,response)
+  {
+    response.render("graph");
+  })
 
 app.listen(port, () => {
   console.log("Port 3000 started");
