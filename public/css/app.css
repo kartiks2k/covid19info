@@ -236,6 +236,7 @@ color: #28a745;
 
 .helpline{
   width: 1350px;
+  overflow-x:auto;
 }
 
 /* graph css */
