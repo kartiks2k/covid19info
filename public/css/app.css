@@ -237,6 +237,7 @@ color: #28a745;
 .helpline{
   width: 1350px;
   overflow-x:auto;
+  webkit-overflow-scrolling: touch;
 }
 
 /* graph css */
