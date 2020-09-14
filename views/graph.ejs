@@ -29,6 +29,17 @@
     <br />
     <button class="btn" id="submitButton" onclick="fn1()">Submit</button>
   </div>
+  
+  <div class="download" style="width: 200px; margin: 0 auto">
+      <button
+        class="btn"
+        id="submitButton"
+        onclick="fn2()"
+        style="height: 70px"
+      >
+        Download Graph
+      </button>
+    </div>
 
   <script>
     function fn1() {
@@ -208,6 +219,15 @@
 
     //ylables.push(max + 1);
     //console.log(passedMap);
+    
+    function fn2() {
+        document.querySelector(".download").addEventListener("click", () => {
+          const downloadGraph = document.querySelector(".graph");
+          console.log(downloadGraph);
+          html2pdf().from(downloadGraph).save();
+        });
+      }
+    
   </script>
 
 
